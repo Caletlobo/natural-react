@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/natural-react/static/css/main.ee3d9ece.css",
+    "main.js": "/natural-react/static/js/main.f74ebd7f.js",
+    "index.html": "/natural-react/index.html",
+    "main.ee3d9ece.css.map": "/natural-react/static/css/main.ee3d9ece.css.map",
+    "main.f74ebd7f.js.map": "/natural-react/static/js/main.f74ebd7f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee3d9ece.css",
+    "static/js/main.f74ebd7f.js"
+  ]
+}
