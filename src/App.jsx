@@ -8,7 +8,7 @@ function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isVideoMuted, setIsVideoMuted] = useState(true);
   const [instaPosts, setInstaPosts] = useState([
-    'img21.png', 'img22.png', 'img23.png', 'img24.png', 'img25.png'
+    '/img21.png', '/img22.png', '/img23.png', '/img24.png', '/img25.png'
   ]);
   const [buyCounters, setBuyCounters] = useState({});
 
@@ -17,12 +17,12 @@ function App() {
 
   // Products data
   const seasonalProducts = [
-    { id: 1, img: 'img10.png', name: 'Mulberry', desc: 'Mulberry ice cream made from fresh mulberries' },
-    { id: 2, img: 'img11.png', name: 'Blueberry', desc: 'Blueberry ice cream rich in antioxidants' },
-    { id: 3, img: 'img12.png', name: 'Black Currant', desc: 'Black currant flavour – tangy & fresh' },
-    { id: 4, img: 'img13.png', name: 'Gooseberry', desc: 'Gooseberry ice cream – vitamin rich' },
-    { id: 5, img: 'img14.png', name: 'Raspberry', desc: 'Raspberry creamy delight' },
-    { id: 6, img: 'img15.png', name: 'Cranberry', desc: 'Cranberry refreshing scoop' }
+    { id: 1, img: '/img10.png', name: 'Mulberry', desc: 'Mulberry ice cream made from fresh mulberries' },
+    { id: 2, img: '/img11.png', name: 'Blueberry', desc: 'Blueberry ice cream rich in antioxidants' },
+    { id: 3, img: '/img12.png', name: 'Black Currant', desc: 'Black currant flavour – tangy & fresh' },
+    { id: 4, img: '/img13.png', name: 'Gooseberry', desc: 'Gooseberry ice cream – vitamin rich' },
+    { id: 5, img: '/img14.png', name: 'Raspberry', desc: 'Raspberry creamy delight' },
+    { id: 6, img: '/img15.png', name: 'Cranberry', desc: 'Cranberry refreshing scoop' }
   ];
 
   // Hero slider effect
@@ -61,7 +61,7 @@ function App() {
 
   // Load more Instagram posts
   const loadMorePosts = () => {
-    const morePosts = ['img26.png', 'img27.png', 'img28.png', 'img29.png', 'img30.png'];
+    const morePosts = ['/img26.png', '/img27.png', '/img28.png', '/img29.png', '/img30.png'];
     setInstaPosts(prev => [...prev, ...morePosts]);
   };
 
@@ -102,8 +102,8 @@ function App() {
       {/* Header */}
       <header className="header">
         <div className="logo-area">
-          <img src="img1.png" alt="Naturals Logo" />
-          <img src="img2.png" alt="40 Years" />
+          <img src="/img1.png" alt="Naturals Logo" />
+          <img src="/img2.png" alt="40 Years" />
         </div>
         <div className="header-right">
           <div className="search-box">
@@ -130,12 +130,12 @@ function App() {
       {/* Hero Slider */}
       <section className="slider">
         <img 
-          src="img3.png" 
+          src="/img3.png" 
           className={`slide ${currentSlide === 0 ? 'active' : ''}`} 
           alt="Slide 1"
         />
         <img 
-          src="img4.png" 
+          src="/img4.png" 
           className={`slide ${currentSlide === 1 ? 'active' : ''}`} 
           alt="Slide 2"
         />
@@ -143,13 +143,13 @@ function App() {
 
       {/* Static Banner */}
       <section className="banner">
-        <img src="img5.png" alt="Banner" />
+        <img src="/img5.png" alt="Banner" />
       </section>
 
       {/* Video with Controls */}
       <section className="video-wrapper">
         <video ref={videoRef} autoPlay muted loop>
-          <source src="video1.mp4" type="video/mp4" />
+          <source src="/video1.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="video-controls">
@@ -161,10 +161,10 @@ function App() {
 
       {/* Story Grid */}
       <section className="story-grid">
-        <img src="img6.png" alt="Story 1" />
-        <img src="img7.png" alt="Story 2" />
-        <img src="img8.png" alt="Story 3" />
-        <img src="img9.png" alt="Story 4" />
+        <img src="/img6.png" alt="Story 1" />
+        <img src="/img7.png" alt="Story 2" />
+        <img src="/img8.png" alt="Story 3" />
+        <img src="/img9.png" alt="Story 4" />
       </section>
 
       {/* Seasonal Best */}
@@ -186,14 +186,14 @@ function App() {
 
       {/* Sundaes */}
       <section className="sundaes">
-        <img src="img16.png" alt="Sundae 1" />
-        <img src="img17.png" alt="Sundae 2" />
-        <img src="img18.png" alt="Sundae 3" />
+        <img src="/img16.png" alt="Sundae 1" />
+        <img src="/img17.png" alt="Sundae 2" />
+        <img src="/img18.png" alt="Sundae 3" />
       </section>
 
       {/* Strips */}
-      <img src="img19.png" className="strip" alt="Strip 1" />
-      <img src="img20.png" className="strip" alt="Strip 2" />
+      <img src="/img19.png" className="strip" alt="Strip 1" />
+      <img src="/img20.png" className="strip" alt="Strip 2" />
 
       {/* Instagram */}
       <section className="instagram">
@@ -207,11 +207,11 @@ function App() {
       </section>
 
       {/* Pre Footer */}
-      <img src="img31.png" className="strip" alt="Pre Footer" />
+      <img src="/img31.png" className="strip" alt="Pre Footer" />
 
       {/* Footer */}
       <footer ref={footerRef} id="footer">
-        <img src="img32.png" alt="Footer" />
+        <img src="/img32.png" alt="Footer" />
         <p>© Natural Ice Creams – Student Clone</p>
         <p style={{ fontSize: '11px', marginTop: '5px' }}>
           Reference: <a href="https://caletlobo.github.io/calet_clone_website/" target="_blank" rel="noopener noreferrer" style={{ color: '#1aa34a' }}>https://caletlobo.github.io/calet_clone_website/</a>
